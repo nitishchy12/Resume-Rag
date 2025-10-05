@@ -8,8 +8,10 @@ const CandidateDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+  // Fixed ESLint warning by disabling exhaustive-deps for fetchResume
   useEffect(() => {
     fetchResume();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchResume = async () => {
