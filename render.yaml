@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: resumerag-backend
+    env: python
+    region: oregon
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: gunicorn resumerag_project.wsgi:application
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: ".onrender.com,127.0.0.1,localhost"
+      - key: DJANGO_SETTINGS_MODULE
+        value: "resumerag_project.settings"
+      - key: DATABASE_URL
+        value: "sqlite:///db.sqlite3"
+    healthCheckPath: /

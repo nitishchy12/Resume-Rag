@@ -1,0 +1,27 @@
+John Doe
+Software Engineer
+
+Email: john.doe@example.com
+Phone: +1-555-123-4567
+
+EXPERIENCE:
+- Senior Software Developer at TechCorp (2020-2024)
+  * Led development of web applications using React and Django
+  * Implemented RESTful APIs and database design
+  * Managed team of 5 developers
+
+- Junior Developer at StartupXYZ (2018-2020)
+  * Developed mobile applications using React Native
+  * Collaborated with cross-functional teams
+  * Participated in agile development processes
+
+SKILLS:
+Python, JavaScript, React, Django, Node.js, PostgreSQL, MongoDB, AWS, Docker, Git
+
+EDUCATION:
+Bachelor of Computer Science, University of Technology (2018)
+
+PROJECTS:
+- E-commerce Platform: Built a full-stack e-commerce solution
+- Chat Application: Real-time messaging app with WebSocket
+- Data Analytics Dashboard: Interactive dashboard with charts and graphs
