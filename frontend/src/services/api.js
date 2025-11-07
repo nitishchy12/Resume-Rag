@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for your Django backend
-const BASE_URL = 'https://resumerag-backend-1133.onrender.com/api';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
 
 // Create axios instance
 const api = axios.create({

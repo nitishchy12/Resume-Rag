@@ -1,4 +1,4 @@
-# Django
+# ===== Django Backend =====
 backend/db.sqlite3
 backend/media/
 backend/staticfiles/
@@ -10,7 +10,12 @@ backend/*/__pycache__/
 backend/*/*/__pycache__/
 backend/*/*/*/__pycache__/
 
-# React
+# Global python ignores
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ===== React Frontend =====
 frontend/node_modules/
 frontend/build/
 frontend/.env.local
@@ -21,17 +26,21 @@ frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 
-# IDE
+# ===== IDE / Editor =====
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
+# ===== OS Files =====
 .DS_Store
 Thumbs.db
 
-# Temp files
+# ===== Temporary files =====
 *.tmp
 *.temp
 temp/
+
+# Virtual environment (any location)
+venv/
+.env/
